@@ -1,12 +1,12 @@
-/* ---------- Global Styles ---------- */
+/* ---------- Global ---------- */
 body {
   background: #fff;
-  font-family: 'Segoe UI','Roboto', Arial, sans-serif;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   font-weight: 600;
   color: #222;
 }
@@ -15,7 +15,7 @@ section {
   margin-bottom: 40px;
 }
 
-/* ---------- Hero/Header ---------- */
+/* ---------- Hero Section ---------- */
 .hero {
   background: #232323;
   text-align: center;
@@ -26,63 +26,82 @@ section {
   color: #fff;
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 }
 
-.hero-sub {
-  font-size: 1.18rem;
+.hero p {
+  font-size: 1.1rem;
   color: #d7d7d7;
   font-weight: 500;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
-.hero .btn-primary {
+.hero .btn {
+  background-color: #007bff;
+  color: #fff;
   padding: 11px 32px;
-  font-size: 1.13rem;
+  font-size: 1.1rem;
   font-weight: 600;
   border-radius: 7px;
+  text-decoration: none;
 }
 
-/* ---------- About Me Section ---------- */
-.about-section {
-  max-width: 920px;
+.hero .btn:hover {
+  background-color: #0056b3;
+}
+
+/* ---------- Profile Section ---------- */
+.profile {
+  max-width: 1000px;
   margin: -40px auto 0;
   display: flex;
   align-items: center;
   gap: 32px;
   background: #fff;
-  padding: 44px 28px 24px 28px;
+  padding: 40px 28px;
   box-shadow: 0 6px 36px rgba(26,36,57,0.10);
   border-radius: 18px;
 }
 
-.about-section h3 {
+.profile-img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.profile h2 {
   margin-bottom: 13px;
 }
 
-.about-section p {
+.profile p {
   color: #333;
   font-size: 1.05rem;
   margin: 0;
 }
 
-@media (max-width:700px) {
-  .about-section {
+@media (max-width: 768px) {
+  .profile {
     flex-direction: column;
-    gap: 12px;
-    padding: 33px 14px;
+    text-align: center;
+    padding: 25px 14px;
+  }
+  .profile-img {
+    max-width: 140px;
   }
 }
 
 /* ---------- Filter Buttons ---------- */
 .filter-btn {
   min-width: 130px;
-  border-radius: 8px !important;
+  border-radius: 8px;
   font-weight: 500;
-  padding: 8px 18px !important;
-  font-size: 1rem !important;
+  padding: 8px 18px;
+  font-size: 1rem;
   letter-spacing: 0.5px;
-  margin-bottom: 5px !important;
+  margin-bottom: 5px;
   transition: background 0.2s, color 0.2s, transform 0.1s;
 }
 
@@ -93,7 +112,6 @@ section {
 
 /* ---------- Project Cards ---------- */
 .project-card {
-  transition: box-shadow 0.2s, transform 0.1s;
   display: flex;
 }
 
@@ -120,6 +138,13 @@ section {
   font-size: 1rem;
   color: #444;
   margin-bottom: 11px;
+}
+
+.btn-dark.btn-sm {
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 7px;
+  padding: 6px 15px;
 }
 
 .border-warning {
@@ -156,8 +181,8 @@ footer {
   background: #111;
   color: #fff;
   padding: 18px 0;
-  letter-spacing: 0.04em;
   font-size: 1.07rem;
+  letter-spacing: 0.04em;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   box-shadow: 0 -1px 10px rgba(44, 62, 80, 0.10);
