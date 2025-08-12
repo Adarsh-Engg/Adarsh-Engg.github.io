@@ -1,190 +1,202 @@
-/* ---------- Global ---------- */
+/* ---------- General Styles ---------- */
 body {
-  background: #fff;
-  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    background: #fff;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-
-h1, h2, h3, h4, h5 {
-  font-weight: 600;
-  color: #222;
+h2, h4, h5 {
+    font-weight: 600;
+    color: #222;
 }
-
 section {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+/* ---------- Container Width ---------- */
+.container, .profile, #skills > .container, #contact > .container {
+    max-width: 1100px;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 /* ---------- Hero Section ---------- */
 .hero {
-  background: #232323;
-  text-align: center;
-  padding: 56px 20px 48px 20px;
+    background: #232323;
+    text-align: center;
+    padding: 56px 20px 48px;
 }
-
 .hero h1 {
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 15px;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
-
 .hero p {
-  font-size: 1.1rem;
-  color: #d7d7d7;
-  font-weight: 500;
-  margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #d7d7d7;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
-
 .hero .btn {
-  background-color: #007bff;
-  color: #fff;
-  padding: 11px 32px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  border-radius: 7px;
-  text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 11px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 7px;
+    text-decoration: none;
 }
-
 .hero .btn:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 /* ---------- Profile Section ---------- */
 .profile {
-  max-width: 1000px;
-  margin: -40px auto 0;
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  background: #fff;
-  padding: 40px 28px;
-  box-shadow: 0 6px 36px rgba(26,36,57,0.10);
-  border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-top: -40px;
+    padding: 40px 28px;
+    background: #fff;
+    box-shadow: 0 6px 36px rgba(26,36,57,0.10);
+    border-radius: 18px;
 }
-
 .profile-img {
-  max-width: 180px;
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
-
 .profile h2 {
-  margin-bottom: 13px;
+    margin-bottom: 13px;
 }
-
 .profile p {
-  color: #333;
-  font-size: 1.05rem;
-  margin: 0;
+    color: #333;
+    font-size: 1.05rem;
+    margin: 0;
 }
-
 @media (max-width: 768px) {
-  .profile {
-    flex-direction: column;
-    text-align: center;
-    padding: 25px 14px;
-  }
-  .profile-img {
-    max-width: 140px;
-  }
+    .profile {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 14px;
+    }
+    .profile-img {
+        max-width: 140px;
+    }
 }
 
-/* ---------- Filter Buttons ---------- */
+/* ---------- Project Filter Buttons ---------- */
 .filter-btn {
-  min-width: 130px;
-  border-radius: 8px;
-  font-weight: 500;
-  padding: 8px 18px;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-  margin-bottom: 5px;
-  transition: background 0.2s, color 0.2s, transform 0.1s;
+    min-width: 130px;
+    border-radius: 8px !important;
+    font-weight: 500;
+    padding: 8px 18px !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px !important;
+    transition: background 0.2s, color 0.2s;
 }
-
-.filter-btn:hover {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  transform: translateY(-1px) scale(1.03);
+.filter-btn.active, .filter-btn:focus, .filter-btn:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transform: translateY(-1px) scale(1.03);
+    outline: none !important;
 }
 
 /* ---------- Project Cards ---------- */
 .project-card {
-  display: flex;
+    transition: box-shadow 0.2s, transform 0.1s;
+    display: flex;
 }
-
 .project-card .card {
-  border-radius: 14px;
-  box-shadow: 0 4px 18px rgba(44, 62, 80, 0.11);
-  border: none;
-  transition: box-shadow 0.18s, transform 0.11s;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(44, 62, 80, 0.11);
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.18s, transform 0.11s;
 }
-
 .project-card .card:hover {
-  box-shadow: 0 8px 28px rgba(44, 62, 80, 0.17);
-  transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 28px rgba(44, 62, 80, 0.17);
+    transform: translateY(-3px) scale(1.02);
 }
-
 .project-card .card-title {
-  font-size: 1.17rem;
-  font-weight: 600;
-  color: #264653;
-  margin-bottom: 7px;
+    font-size: 1.17rem;
+    font-weight: 600;
+    color: #264653;
+    margin-bottom: 7px;
 }
-
 .project-card .card-text {
-  font-size: 1rem;
-  color: #444;
-  margin-bottom: 11px;
+    font-size: 1rem;
+    color: #444444;
+    margin-bottom: 11px;
 }
-
-.btn-dark.btn-sm {
-  font-size: 0.95rem;
-  font-weight: 500;
-  border-radius: 7px;
-  padding: 6px 15px;
+.project-card .btn-dark.btn-sm {
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 7px;
+    padding: 6px 15px;
 }
-
 .border-warning {
-  border: 2px solid #fbc02d !important;
+    border: 2px solid #fbc02d !important;
 }
 
-/* ---------- Skills Badges ---------- */
+/* ---------- Skills Badge Styles ---------- */
 #skills .badge {
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 7px;
-  padding: 10px 18px;
-  margin: 4px;
-  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 7px;
+    padding: 10px 18px;
+    letter-spacing: 0.04em;
+    margin: 4px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
 }
+.bg-warning.text-dark { color: #846100 !important; }
+.bg-primary  { background: #2979ff !important; }
+.bg-success  { background: #5cb85c !important; }
+.bg-warning  { background: #ffd600 !important; }
+.bg-info     { background: #5cd6ff !important; }
+.bg-dark     { background: #222 !important; }
+.bg-secondary{ background: #9ba5b0 !important; }
+.bg-danger   { background: #d32f2f !important; }
 
 /* ---------- Contact Buttons ---------- */
 #contact .btn {
-  min-width: 110px;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 12px;
-  margin: 0 7px 10px 7px;
-  padding: 10px 18px;
-  transition: filter 0.15s;
+    min-width: 110px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 12px;
+    margin: 0 7px 10px;
+    padding: 10px 18px;
+    transition: filter 0.15s;
 }
-
 #contact .btn:hover {
-  filter: brightness(0.93);
+    filter: brightness(0.93);
 }
 
 /* ---------- Footer ---------- */
 footer {
-  background: #111;
-  color: #fff;
-  padding: 18px 0;
-  font-size: 1.07rem;
-  letter-spacing: 0.04em;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  box-shadow: 0 -1px 10px rgba(44, 62, 80, 0.10);
-  margin-top: 36px;
+    background: #111;
+    color: #fff;
+    padding: 18px 0 6px 0;
+    letter-spacing: 0.04em;
+    font-size: 1.07rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    box-shadow: 0 -1px 10px rgba(44, 62, 80, 0.10);
+    margin-top: 36px;
+}
+
+/* ---------- Responsive Tweaks ---------- */
+@media (max-width: 991.98px) {
+    .project-card { margin-bottom: 18px; }
+    .project-card .card { margin-bottom: 0; }
+}
+@media (max-width: 767.98px) {
+    .project-card .card-title {
+        font-size: 1.08rem;
+    }
+    #skills .badge { font-size: 0.98rem; }
 }
