@@ -32,84 +32,169 @@
 </section>
 
 
-    <!-- Completed Projects -->
-    <section id="projects">
-        <h2>Completed Projects</h2>
+  <!-- Projects Section -->
+<section class="container py-5" id="projects">
+  <h2 class="text-center mb-4">Projects</h2>
+  
+  <!-- Filter Buttons -->
+  <div class="text-center mb-4">
+    <button class="btn btn-outline-dark m-1 filter-btn" data-filter="all">All</button>
+    <button class="btn btn-outline-primary m-1 filter-btn" data-filter="data-analysis">Data Analysis</button>
+    <button class="btn btn-outline-success m-1 filter-btn" data-filter="machine-learning">Machine Learning</button>
+    <button class="btn btn-outline-warning m-1 filter-btn" data-filter="visualization">Visualization</button>
+  </div>
 
-        <div class="project-card">
-            <h3>Store Mart Analysis</h3>
-            <p>Built Python tools to analyze retail sales, customer behavior, and operational KPIs for strategic insights.</p>
-            <p><strong>Tools:</strong> Jupyter, Python, GitHub</p>
-            <a href="https://github.com/Adarsh-Engg/Python-Project-Data-Analysis-for-Retail-Company" target="_blank">GitHub Repo</a>
+  <!-- Project Cards -->
+  <div class="row" id="project-list">
+
+    <!-- 1. Store Mart Analysis -->
+    <div class="col-md-4 mb-4 project-card data-analysis">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Store Mart Analysis</h5>
+          <p class="card-text">Developed Python-based tools to analyze retail business data for operational insights and decision-making.</p>
+          <p><strong>Tools:</strong> Jupyter, Python, GitHub</p>
+          <a href="https://github.com/Adarsh-Engg/Python-Project-Data-Analysis-for-Retail-Company" target="_blank" class="btn btn-dark btn-sm">GitHub Repo</a>
         </div>
+      </div>
+    </div>
 
-        <div class="project-card">
-            <h3>TechSphere Employee Performance & Training Analysis</h3>
-            <p>Consolidated employee performance data, analyzed training ROI, and identified factors impacting productivity.</p>
-            <p><strong>Tools:</strong> Excel, SQL, Python, GitHub</p>
-            <a href="https://github.com/Adarsh-Engg/TechSphere-Solutions-Data-Driven-Employee-Performance-and-Training-Analysis" target="_blank">GitHub Repo</a>
+    <!-- 2. TechSphere Employee Performance & Training Analysis -->
+    <div class="col-md-4 mb-4 project-card data-analysis">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">TechSphere Employee Performance & Training Analysis</h5>
+          <p class="card-text">Optimized employee performance, training ROI, and project efficiency using data from multiple departments.</p>
+          <p><strong>Tools:</strong> Excel, SQL, Python, GitHub</p>
+          <a href="https://github.com/Adarsh-Engg/TechSphere-Solutions-Data-Driven-Employee-Performance-and-Training-Analysis" target="_blank" class="btn btn-dark btn-sm">GitHub Repo</a>
         </div>
+      </div>
+    </div>
 
-        <div class="project-card">
-            <h3>Healthcare Plus - Statistical Analysis</h3>
-            <p>Analyzed hospital operations to improve decision-making, resource allocation, and patient satisfaction.</p>
-            <p><strong>Tools:</strong> Jupyter, Python, Pandas, NumPy, GitHub</p>
-            <a href="https://github.com/Adarsh-Engg/Stastistical_Analysis_HealthcarePlus" target="_blank">GitHub Repo</a>
+    <!-- 3. Healthcare Plus - Statistical Analysis -->
+    <div class="col-md-4 mb-4 project-card data-analysis">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Healthcare Plus - Statistical Analysis</h5>
+          <p class="card-text">Performed statistical analysis to improve decision-making, resource planning, and patient satisfaction.</p>
+          <p><strong>Tools:</strong> Jupyter, Python, Pandas, NumPy</p>
+          <a href="https://github.com/Adarsh-Engg/Stastistical_Analysis_HealthcarePlus" target="_blank" class="btn btn-dark btn-sm">GitHub Repo</a>
         </div>
+      </div>
+    </div>
 
-        <div class="project-card">
-            <h3>Hero FinCorp - Loan Performance & Risk Analysis</h3>
-            <p>Identified high-risk customers, optimized branch operations, and increased profitability via segmentation.</p>
-            <p><strong>Tools:</strong> Python, Pandas, NumPy, Seaborn, Matplotlib, GitHub</p>
-            <a href="https://github.com/Adarsh-Engg/HeroFinCorp-DataDrivenAnalysis" target="_blank">GitHub Repo</a>
+    <!-- 4. Hero FinCorp - Loan Performance & Risk Analysis -->
+    <div class="col-md-4 mb-4 project-card machine-learning">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Hero FinCorp - Loan Performance & Risk Analysis</h5>
+          <p class="card-text">Identified high-risk customers and regions, optimized branch operations, and improved profitability.</p>
+          <p><strong>Tools:</strong> Jupyter, Python, Pandas, NumPy, Seaborn, Matplotlib</p>
+          <a href="https://github.com/Adarsh-Engg/HeroFinCorp-DataDrivenAnalysis" target="_blank" class="btn btn-dark btn-sm">GitHub Repo</a>
         </div>
+      </div>
+    </div>
 
-        <div class="project-card">
-            <h3>Fraud Detection and Risk Analysis in Cross River Bank</h3>
-            <p>Used MySQL and MongoDB to detect fraudulent patterns and improve customer risk profiling.</p>
-            <p><strong>Tools:</strong> MySQL, MongoDB, Excel, GitHub</p>
-            <a href="https://github.com/Adarsh-Engg/Fraud-Detection-and-Risk-Analysis-in-Cross-River-Bank" target="_blank">GitHub Repo</a>
+    <!-- 5. Fraud Detection & Risk Analysis - Cross River Bank -->
+    <div class="col-md-4 mb-4 project-card machine-learning">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Fraud Detection & Risk Analysis - Cross River Bank</h5>
+          <p class="card-text">Built data-driven fraud detection and risk assessment system for growing loan and transaction volumes.</p>
+          <p><strong>Tools:</strong> MySQL, MongoDB, Excel, GitHub</p>
+          <a href="https://github.com/Adarsh-Engg/Fraud-Detection-and-Risk-Analysis-in-Cross-River-Bank" target="_blank" class="btn btn-dark btn-sm">GitHub Repo</a>
         </div>
+      </div>
+    </div>
 
-        <div class="project-card">
-            <h3>Airbnb Listing & Review Analysis</h3>
-            <p>Created a Power BI dashboard for pricing analysis, guest satisfaction, and host performance insights.</p>
-            <p><strong>Tools:</strong> Power BI, GitHub</p>
-            <a href="https://github.com/Adarsh-Engg/Airbnb-Listing-Review-Analysis--Power-BI-II" target="_blank">GitHub Repo</a>
+    <!-- 6. Airbnb Listing & Review Analysis -->
+    <div class="col-md-4 mb-4 project-card visualization">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Airbnb Listing & Review Analysis</h5>
+          <p class="card-text">Interactive Power BI dashboard analyzing pricing, host ratings, guest satisfaction, and property types.</p>
+          <p><strong>Tools:</strong> Power BI, GitHub</p>
+          <a href="https://github.com/Adarsh-Engg/Airbnb-Listing-Review-Analysis--Power-BI-II" target="_blank" class="btn btn-dark btn-sm">GitHub Repo</a>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- Ongoing Projects -->
-    <section>
-        <h2>Ongoing Projects</h2>
+    <!-- ================= ONGOING PROJECTS ================= -->
 
-        <div class="project-card ongoing">
-            <h3>Fraud Detection System for JPMorgan Chase</h3>
-            <p>Developing real-time fraud detection using machine learning to analyze and flag suspicious transactions instantly.</p>
-            <p><strong>Tools:</strong> Python, MySQL, MongoDB, Excel, Power BI, ML</p>
+    <!-- Fraud Detection System for JPMorgan Chase -->
+    <div class="col-md-4 mb-4 project-card machine-learning">
+      <div class="card h-100 border-warning">
+        <div class="card-body">
+          <h5 class="card-title">Ongoing: Fraud Detection System - JPMorgan Chase</h5>
+          <p class="card-text">Developing a real-time fraud detection system with machine learning to flag suspicious transactions instantly.</p>
+          <p><strong>Tools:</strong> Python, MySQL, MongoDB, Excel, Power BI, Machine Learning</p>
         </div>
+      </div>
+    </div>
 
-        <div class="project-card ongoing">
-            <h3>Predicting Hospital Readmissions and Patient Outcomes</h3>
-            <p>Leveraging MIMIC-III and Diabetes datasets with ML models to predict readmissions and improve patient care.</p>
-            <p><strong>Tools:</strong> Python, Azure SQL, MongoDB, Power BI, ML</p>
+    <!-- Predicting Hospital Readmissions and Patient Outcomes -->
+    <div class="col-md-4 mb-4 project-card machine-learning">
+      <div class="card h-100 border-warning">
+        <div class="card-body">
+          <h5 class="card-title">Ongoing: Predicting Hospital Readmissions & Outcomes</h5>
+          <p class="card-text">Building predictive models from MIMIC-III and Diabetes datasets to identify high-risk patients and provide early interventions.</p>
+          <p><strong>Tools:</strong> MongoDB, Azure SQL, Python, Power BI, Machine Learning</p>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- Contact Section -->
-    <footer>
-        <h2>Contact</h2>
-        <p>📞 09958833836</p>
-        <p>📧 <a href="mailto:adarshkap@gmail.com">adarshkap@gmail.com</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/adarsh-singh-career/" target="_blank">LinkedIn</a> | 
-        <a href="https://github.com/Adarsh-Engg" target="_blank">GitHub</a></p>
-    </footer>
-    <footer class="bg-dark text-light text-center p-3">
-      &copy; 2025 Adarsh Singh. All rights reserved.
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
+  </div>
+</section>
 
+
+  <!-- Skills Section -->
+<section class="bg-light py-5" id="skills">
+  <div class="container">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="text-center">
+      <span class="badge bg-primary m-1">Python</span>
+      <span class="badge bg-success m-1">SQL</span>
+      <span class="badge bg-warning text-dark m-1">Machine Learning</span>
+      <span class="badge bg-info text-dark m-1">Statistics</span>
+      <span class="badge bg-dark m-1">Data Visualization</span>
+      <span class="badge bg-secondary m-1">Excel</span>
+      <span class="badge bg-danger m-1">Power BI</span>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="container py-5" id="contact">
+  <h2 class="text-center mb-4">Contact</h2>
+  <p class="text-center">Let's connect for collaboration or opportunities.</p>
+  <div class="text-center">
+    <a href="https://github.com/Adarsh-Engg" class="btn btn-dark m-1" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/adarsh-singh-career/" class="btn btn-primary m-1" target="_blank">LinkedIn</a>
+    <a href="mailto:adarshkap@gmail.com" class="btn btn-success m-1">Email</a>
+  </div>
+</section>
+
+<footer class="bg-dark text-light text-center p-3">
+  &copy; 2025 Adarsh Singh. All rights reserved.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const category = button.getAttribute('data-filter');
+    projectCards.forEach(card => {
+      if (category === 'all' || card.classList.contains(category)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
 </body>
 </html>
