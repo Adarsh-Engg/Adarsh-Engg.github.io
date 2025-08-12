@@ -1,108 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adarsh Singh | Data Science Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .card-img-top {
-      height: 200px;
-      object-fit: cover;
-    }
-    .section-title {
-      margin-top: 40px;
-      margin-bottom: 20px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    footer {
-      background: #f8f9fa;
-      padding: 20px 0;
-      margin-top: 40px;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh Singh | Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container py-4">
-
-    <header class="text-center mb-4">
-      <h1>Adarsh Singh</h1>
-      <p class="lead">Data Science & Machine Learning Portfolio</p>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Adarsh Singh</h1>
+        <p>Data Scientist | Machine Learning Enthusiast | Business Insights</p>
+        <a href="#projects" class="btn">View My Work</a>
     </header>
 
-    <!-- Ongoing Projects Section -->
-    <h2 class="section-title">Ongoing Projects</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <img src="https://via.placeholder.com/400x200?text=Hospital+Readmissions" 
-               alt="ML Project: Predicting Hospital Readmissions" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">ML Project: Predicting Hospital Readmissions</h5>
-            <p class="card-text">
-              Building a predictive model to forecast hospital readmissions and patient outcomes.
-              Leveraging Python, Scikit-learn, Pandas, and Matplotlib for analysis and visualization.
+    <!-- Profile Section -->
+    <section class="profile">
+        <img src="profile-placeholder.jpg" alt="Profile Picture">
+        <div>
+            <h2>About Me</h2>
+            <p>
+                I’m a data science enthusiast passionate about solving real-world problems using analytics, 
+                machine learning, and business intelligence. My projects span finance, healthcare, retail, 
+                and technology, blending strong technical skills with business impact.
             </p>
-            <p><strong>Tools:</strong> Python, Scikit-learn, Pandas, Matplotlib</p>
-          </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Completed Projects Section -->
-    <h2 class="section-title">Completed Projects</h2>
-    <div class="row g-4">
+    <!-- Completed Projects -->
+    <section id="projects">
+        <h2>Completed Projects</h2>
 
-      <!-- Fraud Detection Project -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <img src="https://raw.githubusercontent.com/Adarsh-Engg/Fraud-Detection-and-Risk-Analysis-in-Cross-River-Bank/main/fraud.detection.jpeg" 
-               alt="Fraud Detection and Risk Analysis in Cross River Bank" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Fraud Detection and Risk Analysis in Cross River Bank</h5>
-            <p class="card-text">
-              Cross River Bank faces challenges in detecting fraud and assessing customer risk due to rising loan and transaction volumes.
-              This project leverages MySQL (structured data) and MongoDB (unstructured data) to identify fraud patterns, analyze customer
-              behavior, and improve risk analysis.
-            </p>
-            <p><strong>Technologies:</strong> MySQL, MongoDB, Excel, Git & GitHub</p>
-            <a href="https://github.com/Adarsh-Engg/Fraud-Detection-and-Risk-Analysis-in-Cross-River-Bank" 
-               class="btn btn-dark btn-sm">GitHub Repo</a>
-          </div>
+        <div class="project-card">
+            <h3>Store Mart Analysis</h3>
+            <p>Built Python tools to analyze retail sales, customer behavior, and operational KPIs for strategic insights.</p>
+            <p><strong>Tools:</strong> Jupyter, Python, GitHub</p>
+            <a href="https://github.com/Adarsh-Engg/Python-Project-Data-Analysis-for-Retail-Company" target="_blank">GitHub Repo</a>
         </div>
-      </div>
 
-      <!-- Placeholder Project -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <img src="https://via.placeholder.com/400x200?text=Project+Image" 
-               alt="Project placeholder" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Project Title</h5>
-            <p class="card-text">
-              Brief description of the project goes here. Include the main objective, methods, and results.
-            </p>
-            <p><strong>Technologies:</strong> Tech 1, Tech 2, Tech 3</p>
-            <a href="#" class="btn btn-dark btn-sm">GitHub Repo</a>
-          </div>
+        <div class="project-card">
+            <h3>TechSphere Employee Performance & Training Analysis</h3>
+            <p>Consolidated employee performance data, analyzed training ROI, and identified factors impacting productivity.</p>
+            <p><strong>Tools:</strong> Excel, SQL, Python, GitHub</p>
+            <a href="https://github.com/Adarsh-Engg/TechSphere-Solutions-Data-Driven-Employee-Performance-and-Training-Analysis" target="_blank">GitHub Repo</a>
         </div>
-      </div>
 
-    </div>
+        <div class="project-card">
+            <h3>Healthcare Plus - Statistical Analysis</h3>
+            <p>Analyzed hospital operations to improve decision-making, resource allocation, and patient satisfaction.</p>
+            <p><strong>Tools:</strong> Jupyter, Python, Pandas, NumPy, GitHub</p>
+            <a href="https://github.com/Adarsh-Engg/Stastistical_Analysis_HealthcarePlus" target="_blank">GitHub Repo</a>
+        </div>
 
-    <!-- Footer -->
+        <div class="project-card">
+            <h3>Hero FinCorp - Loan Performance & Risk Analysis</h3>
+            <p>Identified high-risk customers, optimized branch operations, and increased profitability via segmentation.</p>
+            <p><strong>Tools:</strong> Python, Pandas, NumPy, Seaborn, Matplotlib, GitHub</p>
+            <a href="https://github.com/Adarsh-Engg/HeroFinCorp-DataDrivenAnalysis" target="_blank">GitHub Repo</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Fraud Detection and Risk Analysis in Cross River Bank</h3>
+            <p>Used MySQL and MongoDB to detect fraudulent patterns and improve customer risk profiling.</p>
+            <p><strong>Tools:</strong> MySQL, MongoDB, Excel, GitHub</p>
+            <a href="https://github.com/Adarsh-Engg/Fraud-Detection-and-Risk-Analysis-in-Cross-River-Bank" target="_blank">GitHub Repo</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Airbnb Listing & Review Analysis</h3>
+            <p>Created a Power BI dashboard for pricing analysis, guest satisfaction, and host performance insights.</p>
+            <p><strong>Tools:</strong> Power BI, GitHub</p>
+            <a href="https://github.com/Adarsh-Engg/Airbnb-Listing-Review-Analysis--Power-BI-II" target="_blank">GitHub Repo</a>
+        </div>
+    </section>
+
+    <!-- Ongoing Projects -->
+    <section>
+        <h2>Ongoing Projects</h2>
+
+        <div class="project-card ongoing">
+            <h3>Fraud Detection System for JPMorgan Chase</h3>
+            <p>Developing real-time fraud detection using machine learning to analyze and flag suspicious transactions instantly.</p>
+            <p><strong>Tools:</strong> Python, MySQL, MongoDB, Excel, Power BI, ML</p>
+        </div>
+
+        <div class="project-card ongoing">
+            <h3>Predicting Hospital Readmissions and Patient Outcomes</h3>
+            <p>Leveraging MIMIC-III and Diabetes datasets with ML models to predict readmissions and improve patient care.</p>
+            <p><strong>Tools:</strong> Python, Azure SQL, MongoDB, Power BI, ML</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <footer>
-      <p>Connect with me:</p>
-      <a href="https://www.linkedin.com/in/adarsh-singh-career/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/Adarsh-Engg" target="_blank">GitHub</a> |
-      <a href="mailto:adarshkap@gmail.com">Email</a>
+        <h2>Contact</h2>
+        <p>📞 9958833836</p>
+        <p>📧 <a href="mailto:adarshkap@gmail.com">adarshkap@gmail.com</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/adarsh-singh-career/" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/Adarsh-Engg" target="_blank">GitHub</a></p>
     </footer>
 
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
