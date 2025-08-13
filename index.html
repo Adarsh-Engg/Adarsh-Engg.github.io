@@ -217,29 +217,31 @@
   </div>
 </section>
 
-/* Contact form dark mode fix */
-body.dark-mode #contact {
-  background-color: #121212; /* Dark background */
-  color: #ffffff; /* White text */
-}
-
-body.dark-mode #contact label,
-body.dark-mode #contact h2 {
-  color: #ffffff; /* Ensure labels and heading are visible */
-}
-
-body.dark-mode #contact input,
-body.dark-mode #contact textarea {
-  background-color: #1e1e1e; /* Darker input background */
-  color: #ffffff; /* White text inside inputs */
-  border: 1px solid #444; /* Subtle border */
-}
-
-body.dark-mode #contact input::placeholder,
-body.dark-mode #contact textarea::placeholder {
-  color: #bbbbbb; /* Light gray placeholder text */
-}
-
+<!-- Contact Form Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <form action="https://formspree.io/f/xqalnjyv" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" class="form-control" id="email" name="_replyto" required>
+      </div>
+      <div class="mb-3">
+        <label for="subject" class="form-label">Subject</label>
+        <input type="text" class="form-control" id="subject" name="subject" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
 
 
 <footer class="bg-dark text-light text-center p-3">
