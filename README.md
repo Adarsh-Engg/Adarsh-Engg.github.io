@@ -8,4 +8,4 @@
 2. Upload `index.html` and `style.css` to the repo.
 3. Commit and push the files.
 
-4. Your site will be live at
+4. Your site will be live
